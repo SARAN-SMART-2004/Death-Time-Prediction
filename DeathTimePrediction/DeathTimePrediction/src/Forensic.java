@@ -1,16 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 
 /**
  *
  * @author ADMIN
  */
 public class Forensic extends javax.swing.JFrame {
-    /**
-     * Creates new form SaranForensic
-     */
+    
     public Forensic() {
         initComponents();
         
@@ -18,7 +13,7 @@ public class Forensic extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
+        //inputs form the users
         jProgressBar1 = new javax.swing.JProgressBar();
         Heading = new javax.swing.JLabel();
         OUTLINE = new javax.swing.JPanel();
@@ -155,57 +150,31 @@ public class Forensic extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void calculatebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculatebtnActionPerformed
-        
+    private void calculatebtnActionPerformed(java.awt.event.ActionEvent evt) {
+        //Deathtime calculations (logic)
         float a,b,c,d,CCC,CCCC,CCCCC,l1,l2,l3,l4;
         a=Float.parseFloat(BO1.getText());
         b=Float.parseFloat(BO2.getText());
         c=Float.parseFloat(BO3.getText());
         d=Float.parseFloat(BO4.getText());
-        CCC = (float)(a-b);//  C
-        CCCC=(float)((98.6-b)/CCC);//   UPP
-        CCCCC=(float)((d-b)/CCC);//       E
-        l1=(float)(c*(Math.log(CCCCC)));//L1
-        l2=(float)(Math.log(CCCC));//LL
-        l3=(float)(l2/l1);//            LLL
+        CCC = (float)(a-b);
+        CCCC=(float)((98.6-b)/CCC);
+        CCCCC=(float)((d-b)/CCC);
+        l1=(float)(c*(Math.log(CCCCC)));
+        l2=(float)(Math.log(CCCC));
+        l3=(float)(l2/l1);
         l4=(int)(-1*(l3));
-        AAAAA.setText(String.valueOf(l4));    
+        AAAAA.setText(String.valueOf(l4));   
+        //logic of the program end here 
       
-    }//GEN-LAST:event_calculatebtnActionPerformed
+    }
 
 /**
   
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-  /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-
-/**
- *
- * @author CSE STUDENTS
- */
-
-    
-         /**
   
-     * @param args the command line arguments
-    
-         System.out.println("Hours= " +l4);
-    
-   })
-
-        
-        * */
-        
-     
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Metal".equals(info.getName())) {
